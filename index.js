@@ -2,7 +2,7 @@
 const logDriverNames = function (drivers) {
   drivers.forEach(function (driver) {
     console.log(driver.name);
-  })
+  });
 }
 
 const logDriversByHometown = function (drivers, location) {
@@ -12,12 +12,12 @@ const logDriversByHometown = function (drivers, location) {
     if (driver.hometown === location) {
       hometownDrivers.push(driver);
     }
-  })
+  });
 
   return logDriverNames(hometownDrivers);
 }
 
 
 function driversByRevenue(drivers) {
-  
+
 }
