@@ -6,5 +6,13 @@ const logDriverNames = function (drivers) {
 }
 
 const logDriversByHometown = function (drivers, location) {
-  
+  const hometownDrivers = [];
+
+  for (const driver of drivers) {
+    if (driver.hometown === location) {
+      hometownDrivers.push(driver);
+    }
+  }
+
+  return logDriverNames(hometownDrivers);
 }
