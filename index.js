@@ -22,4 +22,6 @@ function driversByRevenue(drivers) {
   const revSortedDrivers = drivers.sort(function (driver1, driver2) {
     return driver1.revenue - driver2.revenue;
   });
+
+  return revSortedDrivers;
 }
