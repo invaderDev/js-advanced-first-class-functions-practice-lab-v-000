@@ -5,7 +5,7 @@ const logDriverNames = function (drivers) {
   });
 }
 
-const logDriversByHometown = function (drivers, location) {
+function logDriversByHometown(drivers, location) {
   const hometownDrivers = [];
 
   drivers.forEach(function (driver) {
@@ -20,8 +20,9 @@ const logDriversByHometown = function (drivers, location) {
 
 function driversByRevenue(drivers) {
   const nonDestructiveDrivers = [...drivers];
-  
+
   return nonDestructiveDrivers.sort(function (driver1, driver2) {
     return driver1.revenue - driver2.revenue;
   });
 }
+
