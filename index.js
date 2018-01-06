@@ -16,3 +16,7 @@ const logDriversByHometown = function (drivers, location) {
 
   return logDriverNames(hometownDrivers);
 }
+
+function driversByRevenue(drivers) {
+  
+}
