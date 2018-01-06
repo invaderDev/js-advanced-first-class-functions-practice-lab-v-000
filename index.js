@@ -26,7 +26,7 @@ function driversByRevenue(drivers) {
   });
 }
 
-function diversByName(drivers) {
+function driversByName(drivers) {
   const nonDestructiveDrivers = [...drivers];
 
   return nonDestructiveDrivers.sort(function (driver1, driver2) {
