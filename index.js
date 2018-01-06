@@ -41,5 +41,7 @@ function totalRevenue(drivers) {
     driverRevenues.push(driver.revenue);
   });
 
-  return driverRevenues.reduce();
+  return driverRevenues.reduce(function (total, rev) {
+    return total + rev;
+  });
 }
