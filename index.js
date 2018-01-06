@@ -45,3 +45,7 @@ function totalRevenue(drivers) {
     return total + rev;
   });
 }
+
+function averageRevenue(drivers) {
+  return totalRevenue(drivers) / drivers.length;
+}
