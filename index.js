@@ -35,5 +35,11 @@ function driversByName(drivers) {
 }
 
 function totalRevenue(drivers) {
+  const driverRevenues = [];
 
+  drivers.forEach(function (driver) {
+    driverRevenues.push(driver.revenue);
+  });
+
+  return driverRevenues.reduce();
 }
