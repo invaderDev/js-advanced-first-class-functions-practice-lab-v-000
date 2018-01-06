@@ -19,7 +19,8 @@ const logDriversByHometown = function (drivers, location) {
 
 
 function driversByRevenue(drivers) {
-  return drivers.sort(function (driver1, driver2) {
+  const nonDestructiveDrivers = drivers;
+  return nonDestructiveDrivers.sort(function (driver1, driver2) {
     return driver1.revenue - driver2.revenue;
   });
 }
