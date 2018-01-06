@@ -1,5 +1,5 @@
 // Code your solution in this file!
-const logDriverNames = function (drivers) {
+function logDriverNames(drivers) {
   drivers.forEach(function (driver) {
     console.log(driver.name);
   });
@@ -25,4 +25,3 @@ function driversByRevenue(drivers) {
     return driver1.revenue - driver2.revenue;
   });
 }
-
