@@ -8,11 +8,11 @@ const logDriverNames = function (drivers) {
 const logDriversByHometown = function (drivers, location) {
   const hometownDrivers = [];
 
-  for (const driver of drivers) {
+  drivers.forEach(function (driver) {
     if (driver.hometown === location) {
       hometownDrivers.push(driver);
     }
-  }
+  })
 
   return logDriverNames(hometownDrivers);
 }
