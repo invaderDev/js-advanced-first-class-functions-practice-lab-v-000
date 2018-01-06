@@ -33,3 +33,10 @@ function driversByName(drivers) {
     return driver1.name.localeCompare(driver2.name);
   });
 }
+
+function totalRevenue(drivers) {
+  return drivers.reduce(function (total, rev) {
+    let rev = driver.revenue;
+    return total + rev;
+  });
+}
